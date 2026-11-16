@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build The Verdict",
+      "type": "shell",
+      "command": "C:/raylib/w64devkit/bin/gcc.exe",
+      "args": [
+        "-std=c99",
+        "-Iinclude",
+        "src/main.c",
+        "src/game.c",
+        "src/case_data.c",
+        "src/ui.c",
+        "-o",
+        "TheVerdict.exe",
+        "-Llib",
+        "-lraylib",
+        "-lopengl32",
+        "-lgdi32",
+        "-lwinmm"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
