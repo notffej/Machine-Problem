@@ -129,7 +129,7 @@ static void screenCaseMenu(GameState *g)
     if (drawButton(BTN(350, 455, 300, 50), "Exit Game"))               g->shouldQuit = 1;
 
     if (!unlocked)
-        DrawText("Collect all 6 pieces of evidence to unlock the laboratory.", 290, 525, 18, LIGHTGRAY);
+        DrawText("Collect all pieces of evidence to unlock the laboratory.", 290, 525, 18, LIGHTGRAY);
 }
 
 /* ------------------------------------------------------------- crime scene */

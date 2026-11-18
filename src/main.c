@@ -11,9 +11,9 @@ int main(void)
 
     InitAudioDevice();
     Music bgm = LoadMusicStream("assets/music/bgm.mp3");
-    SetMusicVolume(bgm, 0.30f);
+    SetMusicVolume(bgm, 0.35f);
     PlayMusicStream(bgm);
-    
+
     SetExitKey(KEY_NULL);                 /* ESC does not close the game   */
     SetTargetFPS(60);
    
